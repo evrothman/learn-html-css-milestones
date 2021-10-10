@@ -1,0 +1,55 @@
+<html>
+<head>
+  <style>
+    P{
+    color:black;
+    text-align: center;
+    text-transform:lowercase;
+    line-spacing: 1em;
+    font-family: Arial Helvetica Sans-serif;
+    font-size:2em;
+    font-style: normal;
+    font-weight: 700;
+    background-color: #E8E4D6 ;
+    margin: 2em ;
+    padding: 2em;
+    border: 1em;
+  }
+  div p{
+    background-color: inherit;
+    font-family: Serif;
+  }
+  ul{
+      list-style-type: square;
+      color: blue;
+  }
+  .red{
+    color:red;
+  }
+  #blue{
+    color:blue;
+  }
+  </style>
+</head>
+<body>
+  <h1 class="red" id="blue"> This is a standard H1 </h1>
+<!-- because an Id is more specific than a class, this text will be blue -->
+  <p class="red"> this is a paragraph that has been edited with CSS</p>
+<!-- because a class is more specific than a element, this text will be red -->
+  <div>
+    <img src="assets/img/photoFromLake.jpg" height=200px width=300px>
+    <p> I took this photo years ago in a small town called Eaglesmere.</p>
+<!-- This does not have the background color of the other paragraph.
+This is becasue a paragraph within a div is more specific than just a paragraph-->
+<h2> I also need to add a list </h2>
+    <ul>
+      <li> Eaglesmere is in Pennsylvania</li>
+      <li> Its also in the Mountains </li>
+      <li> When I was younger, I was fascinated by the fact that there was
+         this large lake on the top of a mountain </li>
+<!-- even though these list items have not been directly edited by CSS
+because they are within the unordered list that has been, those changes effect
+the list items. -->
+    <ul>
+  </div>
+</html>
