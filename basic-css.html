@@ -1,11 +1,13 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <title> basic css</title>
   <style>
     P{
     color:black;
     text-align: center;
     text-transform:lowercase;
-    line-spacing: 1em;
+    line-height: 2em;
     font-family: Arial Helvetica Sans-serif;
     font-size:2em;
     font-style: normal;
@@ -37,7 +39,7 @@
   <p class="red"> this is a paragraph that has been edited with CSS</p>
 <!-- because a class is more specific than a element, this text will be red -->
   <div>
-    <img src="assets/img/photoFromLake.jpg" height=200px width=300px>
+    <img src="assets/img/photoFromLake.jpg" height=200 width=300 alt="sailboats at dock">
     <p> I took this photo years ago in a small town called Eaglesmere.</p>
 <!-- This does not have the background color of the other paragraph.
 This is becasue a paragraph within a div is more specific than just a paragraph-->
@@ -50,6 +52,6 @@ This is becasue a paragraph within a div is more specific than just a paragraph-
 <!-- even though these list items have not been directly edited by CSS
 because they are within the unordered list that has been, those changes effect
 the list items. -->
-    <ul>
+</ul>
   </div>
 </html>
